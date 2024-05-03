@@ -15,8 +15,7 @@ public class SQLHelper {
     }
 
     private static Connection getConn() throws SQLException {
-        // return DriverManager.getConnection("jdbc:postgresql://localhost:5432/app", System.getProperty("db.use"), System.getProperty("db.password"));
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/app", System.getProperty("db.use"), System.getProperty("db.password");
+        return DriverManager.getConnection(System.getProperty("db.url"), System.getProperty("db.use"), System.getProperty("db.password");
     }
 
     @SneakyThrows
